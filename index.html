@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chat Dashboard</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: 'Inter', sans-serif;
+			background-color: #F5F5F5;
+		}
+
+		#top {
+			display: flex;
+			flex-direction: column;
+			height: 100vh;
+			justify-content: space-between;
+			align-items: center;
+			padding: 20px;
+		}
+
+		#logo {
+			width: 109px;
+			height: 109px;
+			background-color: #FFFFFF;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 20px;
+		}
+
+		#logo img {
+			max-width: 80%;
+			max-height: 80%;
+		}
+
+		#account {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			background-color: #FFFFFF;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+			margin-bottom: 20px;
+			width: 100%;
+		}
+
+		#account h2 {
+			font-size: 24px;
+			font-weight: 400;
+			margin: 0;
+			margin-bottom: 10px;
+			text-align: center;
+		}
+
+		#account p {
+			font-size: 16px;
+			margin: 0;
+			text-align: center;
+		}
+
+		#sidebar {
+			display: flex;
+			flex-direction: column;
+			background-color: #FFFFFF;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+			width: 100%;
+			margin-bottom: 20px;
+		}
+
+		#sidebar h2 {
+			font-size: 24px;
+			font-weight: 400;
+			margin: 0;
+			margin-bottom: 20px;
+		}
+
+		#sidebar ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		#sidebar li {
+			display: flex;
+			align-items: center;
+			margin-bottom: 10px;
+		}
+
+		#sidebar li img {
+			margin-right: 10px;
+			max-width: 20px;
+			max-height: 20px;
+		}
+
+		#sidebar li a {
+			font-size: 16px;
+			color: #333333;
+			text-decoration: none;
+		}
+
+		@media only screen and (min-width: 768px) {
+			#top {
+				flex-direction: row;
+				padding: 40px;
+			}
+
+			#logo {
+				margin-right: 40px;
+				margin-bottom: 0;
+			}
+
+			#account {
+				margin-bottom: 40px;
+				width: 50%;
+			}
+
+			#sidebar {
+				margin-bottom: 0;
+				width: 50%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="top">
+		<div id="logo">
+			<img src="https://s3-alpha.figma.com/thumbnails/830a845b-f9c1-4005-b54a-5e30362b50ca?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAQ4GOSFWCSFSHU7FM%2F20230601%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20230601T000000Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=3f6be7da30297c739e4bcb3011b40555c233249aee1bc50ebf704fe1e9cf7661">
+		</div>
+		<div id="account">
+			<h2>John Conny</h2>
+			<p>Customer</p>
+		</div>
+		<div id="sidebar">
+			<h2>Menu</h2>
+			<ul>
+				<li><img src="https://img.icons8.com/material-outlined/24/000000/chat.png"/><a href="#">Chat</a></li>
+				<li><img src="https://img.icons8.com/material-outlined/24/000000/user.png"/><a href="#">Profile</a></li>
+				<li><img src="https://img.icons8.com/material-outlined/24/000000/settings.png"/><a href="#">Settings</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
