@@ -19,6 +19,13 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 
 # 以下のリンクのFigmaをHTML/CSSに変換するコード
 # https://www.figma.com/file/h0sdUKP1SEqiJ8OCwUFxH5/Chat-Dashboard?type=design&node-id=14-884&t=1zbepiR3llG5raOB-4
+# 
+# 所感
+# 例のコードのままだと全くと言っていいほど、精度は高くない
+# 考えられる要因
+# - figma_doc_retriever.get_relevant_documents で情報が落とされ過ぎている
+# - Figmaの作り方
+
 
 figma_loader = FigmaFileLoader(
     os.environ.get('FIGMA_ACCESS_TOKEN'),
